@@ -3,3 +3,9 @@
     margin-right: 20px;
     border-radius: 25%;
 }
+
+.img-produtos {
+    border-radius: 1%;
+    max-width: 35em;
+    min-width: 25em;
+}
