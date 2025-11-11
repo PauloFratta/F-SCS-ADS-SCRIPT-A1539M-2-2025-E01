@@ -16,3 +16,9 @@
 .paragraph {
     padding-left: 40px;
 }
+
+.img-produtos {
+    border-radius: 1%;
+    max-width: 35em;
+    min-width: 25em;
+}
