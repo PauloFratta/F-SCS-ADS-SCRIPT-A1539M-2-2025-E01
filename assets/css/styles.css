@@ -18,7 +18,15 @@
 }
 
 .img-produtos {
-    border-radius: 1%;
-    max-width: 35em;
-    min-width: 25em;
+    border-style: solid 2px;
+    border-color: black;
+}
+
+#img-borda {
+    border-style: solid 2px;
+    border-color: black;
+}
+
+.meus-cards {
+    padding: 5%;
 }
