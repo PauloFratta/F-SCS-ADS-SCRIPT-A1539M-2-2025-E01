@@ -57,3 +57,19 @@
         height: 300px;
     }
 }
+
+/* Imagens dos cards de produtos com altura fixa e fundo branco */
+.card-img-top {
+    height: 250px;
+    object-fit: contain;
+    background-color: white;
+    padding: 1rem;
+    border: 0.5px solid gray;
+}
+
+/* Responsividade para imagens dos cards */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
