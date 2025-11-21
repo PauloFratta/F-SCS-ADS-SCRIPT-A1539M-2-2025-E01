@@ -30,3 +30,30 @@
 .meus-cards {
     padding: 5%;
 }
+
+/* Carousel com altura fixa para evitar redimensionamento */
+.carousel-fixed-height {
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-fixed-height .carousel-inner {
+    height: 100%;
+}
+
+.carousel-fixed-height .carousel-item {
+    height: 100%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .carousel-fixed-height {
+        height: 300px;
+    }
+}
