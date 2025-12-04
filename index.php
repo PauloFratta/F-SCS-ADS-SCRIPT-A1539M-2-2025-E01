@@ -1,0 +1,156 @@
+    <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hortamatica — Hortas Automatizadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <?php if (isset($_GET['success'])): ?>
+        <div class="alert success">
+            Mensagem enviada com sucesso!
+        </div>
+    <?php endif; ?>
+    <?php if (isset($_GET['error'])): ?>
+        <div class="alert error">
+            Erro ao enviar mensagem. Tente novamente.
+        </div>
+    <?php endif; ?>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/Logo.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Hortamática
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="impacto.html">Impacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div id="carouselExample" class="carousel slide carousel-fixed-height" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/horta-automatizada.jpg" class="d-block w-100 rounded carousel-img" alt="Horta automatizada">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/kit-basico.png" class="d-block w-100 rounded carousel-img" alt="Kit básico">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/kit-educacional.jpg" class="d-block w-100 rounded carousel-img" alt="Kit educacional">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <h1 class="display-4 fw-bold mb-3">Hortamatica</h1>
+                <p class="lead text-muted">Cultive o futuro: hortas inteligentes que cuidam sozinhas do seu alimento.</p>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="bg-light py-5">
+        <div class="container">
+            <section class="mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="h3 mb-4">Por que Hortamatica?</h2>
+                        <p class="mb-4">Hortamatica oferece sistemas de hortas automatizadas que combinam tecnologia e agricultura urbana para
+                            produzir alimentos frescos com eficiência.</p>
+
+                        <h3 class="h4 mb-3">Benefícios</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <strong>Sustentabilidade:</strong> redução do desperdício de água, uso otimizado de recursos e
+                                produção local.
+                            </li>
+                            <li class="mb-2">
+                                <strong>Geração de empregos:</strong> novas oportunidades em manutenção, instalação e
+                                desenvolvimento de soluções agrícolas.
+                            </li>
+                        </ul>
+
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="sobre.html" class="btn btn-primary">Saiba mais</a>
+                            <a href="produtos.html" class="btn btn-outline-primary">Monte sua horta</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="saiba-mais" class="mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="h3 mb-4">Saiba mais</h2>
+                        <p>Aqui você encontrará detalhes técnicos sobre sensores, irrigação automática, monitoramento por aplicativo
+                            e opções de módulos para diferentes espaços (varanda, telhado, comunidade).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="monte-sua-horta" class="mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="h3 mb-4">Monte sua horta</h2>
+                        <p>Escolha o módulo ideal, defina o nível de automação e nós entregamos e instalamos. Comece hoje a produzir
+                            seus alimentos com tecnologia.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="bg-body-tertiary mt-5">
+        <div class="container py-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; <span>2025</span> Hortamatica — Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
