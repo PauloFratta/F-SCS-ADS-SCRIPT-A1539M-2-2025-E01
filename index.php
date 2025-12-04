@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <?php if (isset($_GET['success'])): ?>
+        <div class="alert success">
+            Mensagem enviada com sucesso!
+        </div>
+    <?php endif; ?>
+    <?php if (isset($_GET['error'])): ?>
+        <div class="alert error">
+            Erro ao enviar mensagem. Tente novamente.
+        </div>
+    <?php endif; ?>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
